@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" placeholder="Enter city..." id="cityInput" autocomplete="off">
+      <button id="searchBtn">Get Weather</button>
+    </div>
+
+    <div class="weather-box">
+      <h2 id="cityName">City</h2>
+      <p id="temperature">Temperature: --°C</p>
+      <p id="description">Condition: --</p>
+      <p id="feelsLike">Feels like: --°C</p>
+      <p id="humidity">Humidity: --%</p>
+      <p id="wind">Wind: -- m/s</p>
+    </div>
+  </div>
+
+  <div class="feels-scale">
+    <div class="level" id="lvl-cold">❄️ Cold</div>
+    <div class="level" id="lvl-cool">🧊 Cool</div>
+    <div class="level" id="lvl-mild">🙂 Mild</div>
+    <div class="level" id="lvl-warm">🌤️ Warm</div>
+    <div class="level" id="lvl-hot">🔥 Hot</div>
+
+    <div class="scale-info">
+      <p id="feelsText">Feels: --</p>
+      <p id="clothesAdvice">Advice: --</p>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
