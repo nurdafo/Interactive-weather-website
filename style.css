@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  margin: 20px;
+}
+
+input {
+  padding: 12px;
+  width: 220px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.weather-box {
+  margin-top: 40px;
+  font-size: 22px;
+}
+.feels-scale {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.35);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.level {
+  padding: 10px;
+  margin: 6px 0;
+  color: white;
+  opacity: 0.4;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.level.active {
+  opacity: 1;
+  background: rgba(255,255,255,0.2);
+}
+
+.scale-info {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  text-align: left;
+  font-size: 16px;
+  max-width: 190px;
+}
+
+.scale-info p {
+  margin: 8px 0;
+  line-height: 1.35;
+}
